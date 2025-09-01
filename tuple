@@ -1,0 +1,77 @@
+# 1. Add all elements of a list
+nums = [1, 2, 3, 4, 5]
+print("Sum:", sum(nums))
+
+# 2. Find max and min in a list
+print("Max:", max(nums))
+print("Min:", min(nums))
+
+# 3. Count even and odd numbers in a list
+even = len([x for x in nums if x % 2 == 0])
+odd = len([x for x in nums if x % 2 != 0])
+print("Even count:", even, "Odd count:", odd)
+
+# 4. Reverse a list without using reverse()
+print("Reversed:", nums[::-1])
+
+# 5. Remove duplicates from list
+dup_list = [1, 2, 2, 3, 4, 4, 5]
+unique = list(set(dup_list))
+print("Without duplicates:", unique)
+
+# 6. Sort a list of strings by length
+words = ["apple", "banana", "kiwi", "grape"]
+words.sort(key=len)
+print("Sorted by length:", words)
+
+# 7. Find the second largest number in the list
+nums2 = [10, 20, 4, 45, 99]
+nums2_sorted = sorted(set(nums2))
+print("Second largest:", nums2_sorted[-2])
+
+# 8. Find sum of all nested list elements
+nested = [[1, 2], [3, 4], [5]]
+total = sum(sum(inner) for inner in nested)
+print("Sum of nested list elements:", total)
+
+# 9. Check if two lists are equal
+list1 = [1, 2, 3]
+list2 = [1, 2, 3]
+print("Lists equal:", list1 == list2)
+
+# 10. Merge two lists and sort them
+merged = sorted(list1 + list2)
+print("Merged & Sorted:", merged)
+
+# 11. Convert tuple to list and back
+tup = (1, 2, 3)
+lst = list(tup)
+back_to_tup = tuple(lst)
+print("Tuple:", tup, "-> List:", lst, "-> Tuple again:", back_to_tup)
+
+# 12. Check if the tuple contains a value
+print("Tuple contains 2:", 2 in tup)
+
+# 13. Unpack a tuple into variables
+a, b, c = tup
+print("Unpacked:", a, b, c)
+
+# 14. Create a list of squares using comprehension
+squares = [x**2 for x in range(1, 6)]
+print("Squares:", squares)
+
+# 15. Count how many times a number appears in a list
+nums3 = [1, 2, 2, 3, 2, 4]
+print("Count of 2:", nums3.count(2))
+
+# 16. Find index of element in tuple
+tup2 = (10, 20, 30, 40)
+print("Index of 30:", tup2.index(30))
+
+# 17. Slice a tuple from index 1 to 3
+print("Tuple slice:", tup2[1:4])
+
+# 18. Replace element in list with another
+nums4 = [1, 2, 3, 4, 5]
+nums4[2] = 99
+print("After replacement:", nums4)
